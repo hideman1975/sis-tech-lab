@@ -1,6 +1,6 @@
 import { serialize, deserialize } from "./index.js";
 
-console.log("test start");
+console.log("Test start");
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -9,7 +9,7 @@ function getRandomInt(min, max) {
 }
 
 function test01() {
-  const name = "Short numbers";
+  const name = "Short array";
   const arr = [
     5, 3, 7, 1, 9, 5, 3, 8, 3, 1, 9, 0, 4, 1, 3, 4, 6, 1, 5, 6, 3, 7,
   ];
@@ -17,7 +17,9 @@ function test01() {
   const shortStringify = serialize(arr);
   const deStringify = deserialize(shortStringify);
   const effect = (shortStringify.length * 100) / JsonStringify.length;
-  console.log("Test:", name, "Result:", effect, "%");
+  console.log('----------------------------------------------------------')
+  console.log("Test:", name, "Decrease effect:", effect, "%");
+  console.log('----------------------------------------------------------')
   console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
   console.log("Short:", shortStringify, "Length:", shortStringify.length);
   console.log("Origin:", arr, "Deserialized:", deStringify);
@@ -38,7 +40,9 @@ function test02() {
   const shortStringify = serialize(arr);
   const deStringify = deserialize(shortStringify);
   const effect = (shortStringify.length * 100) / JsonStringify.length;
-  console.log("Test:", name, "Result:", effect, "%");
+  console.log('----------------------------------------------------------')
+  console.log("Test:", name, "Decrease effect:", effect, "%");
+  console.log('----------------------------------------------------------')
   console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
   console.log("Short:", shortStringify, "Length:", shortStringify.length);
   console.log("Origin:", arr, "Deserialized:", deStringify);
@@ -59,7 +63,9 @@ function test03() {
   const shortStringify = serialize(arr);
   const deStringify = deserialize(shortStringify);
   const effect = (shortStringify.length * 100) / JsonStringify.length;
-  console.log("Test:", name, "Result:", effect, "%");
+  console.log('----------------------------------------------------------')
+  console.log("Test:", name, "Decrease effect:", effect, "%");
+  console.log('----------------------------------------------------------')
   console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
   console.log("Short:", shortStringify, "Length:", shortStringify.length);
   console.log("Origin:", arr, "Deserialized:", deStringify);
@@ -80,7 +86,9 @@ function test04() {
   const shortStringify = serialize(arr);
   const deStringify = deserialize(shortStringify);
   const effect = (shortStringify.length * 100) / JsonStringify.length;
-  console.log("Test:", name, "Result:", effect, "%");
+  console.log('----------------------------------------------------------')
+  console.log("Test:", name, "Decrease effect:", effect, "%");
+  console.log('----------------------------------------------------------')
   console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
   console.log("Short:", shortStringify, "Length:", shortStringify.length);
   console.log("Origin:", arr, "Deserialized:", deStringify);
@@ -102,7 +110,9 @@ function test05() {
     const shortStringify = serialize(arr);
     const deStringify = deserialize(shortStringify);
     const effect = (shortStringify.length * 100) / JsonStringify.length;
-    console.log("Test:", name, "Result:", effect, "%");
+    console.log('----------------------------------------------------------')
+    console.log("Test:", name, "Decrease effect:", effect, "%");
+    console.log('----------------------------------------------------------')
     console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
     console.log("Short:", shortStringify, "Length:", shortStringify.length);
     console.log("Origin:", arr, "Deserialized:", deStringify);
@@ -125,7 +135,9 @@ function test06() {
     const shortStringify = serialize(arr);
     const deStringify = deserialize(shortStringify);
     const effect = (shortStringify.length * 100) / JsonStringify.length;
-    console.log("Test:", name, "Result:", effect, "%");
+    console.log('----------------------------------------------------------')
+    console.log("Test:", name, "Decrease effect:", effect, "%");
+    console.log('----------------------------------------------------------')
     console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
     console.log("Short:", shortStringify, "Length:", shortStringify.length);
     console.log("Origin:", arr, "Deserialized:", deStringify);
@@ -148,7 +160,9 @@ function test07() {
     const shortStringify = serialize(arr);
     const deStringify = deserialize(shortStringify);
     const effect = (shortStringify.length * 100) / JsonStringify.length;
-    console.log("Test:", name, "Result:", effect, "%");
+    console.log('----------------------------------------------------------')
+    console.log("Test:", name, "Decrease effect:", effect, "%");
+    console.log('----------------------------------------------------------')
     console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
     console.log("Short:", shortStringify, "Length:", shortStringify.length);
     console.log("Origin:", arr, "Deserialized:", deStringify);
@@ -171,7 +185,9 @@ function test08() {
     const shortStringify = serialize(arr);
     const deStringify = deserialize(shortStringify);
     const effect = (shortStringify.length * 100) / JsonStringify.length;
-    console.log("Test:", name, "Result:", effect, "%");
+    console.log('----------------------------------------------------------')
+    console.log("Test:", name, "Decrease effect:", effect, "%");
+    console.log('----------------------------------------------------------')
     console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
     console.log("Short:", shortStringify, "Length:", shortStringify.length);
     console.log("Origin:", arr, "Deserialized:", deStringify);
@@ -196,7 +212,9 @@ function test09() {
     const shortStringify = serialize(arr);
     const deStringify = deserialize(shortStringify);
     const effect = (shortStringify.length * 100) / JsonStringify.length;
-    console.log("Test:", name, "Result:", effect, "%");
+    console.log('----------------------------------------------------------')
+    console.log("Test:", name, "Decrease effect:", effect, "%");
+    console.log('----------------------------------------------------------')
     console.log("JSON:", JsonStringify, "Length:", JsonStringify.length);
     console.log("Short:", shortStringify, "Length:", shortStringify.length);
     console.log("Origin:", arr, "Deserialized:", deStringify);

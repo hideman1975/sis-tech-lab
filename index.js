@@ -15,7 +15,6 @@ export function serialize(arr) {
     } else {
       let ost = item - 150;
       desArr = desArr + ",";
-      desArr = desArr + reverseAsciiMap.get(150);
       desArr = desArr + reverseAsciiMap.get(ost);
     }
   });
@@ -28,8 +27,7 @@ export function deserialize(str) {
   let desAr = [];
   for (let i = 0; i < ar.length; i++) {
     if (ar[i] === ",") {
-      i++;
-      let item = asciiMap.get(ar[i]);
+      let item = 150;
       i++;
       item = item + asciiMap.get(ar[i]);
       desAr.push(item);
